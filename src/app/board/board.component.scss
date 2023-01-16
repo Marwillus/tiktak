@@ -1,0 +1,47 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+h1,
+.alert {
+  color: #1c1926;
+}
+
+h1 {
+  margin: 1rem;
+  font-weight: 300;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  grid-gap: 0px;
+}
+
+.alert {
+  height: 3rem;
+  padding: 0.5rem 1rem;
+}
+
+app-square {
+  border: 1px gray solid;
+  height: 120px;
+}
+
+.gradient-border {
+  border-radius: 4px;
+  outline: 4px rgb(7, 188, 7) solid;
+  outline-offset: 6px;
+  box-shadow: 0 0 20px 4px rgb(7 188 7 / 29%);
+}
+
+footer {
+  color: #221121;
+  font-size: 0.75rem;
+  position: absolute;
+  bottom: 0.5rem;
+  right: 1.5rem;
+}

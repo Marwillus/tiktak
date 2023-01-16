@@ -1,0 +1,23 @@
+<h1> TickTakPro! </h1>
+
+<button mat-raised-button color="primary" (click)="newGame()">Start new Game</button>
+
+<div class="alert">
+    <h2 *ngIf="winner;else other_content">
+        Player {{ winner }} won the game!
+    </h2>
+    
+</div>
+
+<ng-template #other_content>Current Player: {{ player }}</ng-template>
+
+<main [ngClass]="{'gradient-border': gameOver}">
+    <app-square 
+        *ngFor="let val of squares; let i = index" 
+        [value]="val"
+        (click)="makeMove(i)"> 
+
+    </app-square>
+</main>
+
+<footer>Marcus did this</footer>

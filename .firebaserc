@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-test-efbc3": {
+      "hosting": {
+        "tiktak": [
+          "angular-test-efbc3"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-test-efbc3"
+  }
+}
